@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Tool | Connor's Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header class="main-header">
+    <div class="logo">
+        <h1>Connor's Photography</h1>
+        <p>Capturing Moments That Matter</p>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="crop.html" class="active">Crop Tool</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Breadcrumbs -->
+<section class="breadcrumbs">
+    <p>
+        <a href="index.html">Home</a> › Crop Tool
+    </p>
+</section>
+
+<!-- Page Overview -->
+<section class="overview">
+    <h2>Image Crop Tool</h2>
+    <p>
+        Use our crop tool to adjust your images before submitting them for prints
+        or touch-ups. Drag the corners of the crop box to select your desired area.
+    </p>
+</section>
+
+<!-- Crop Tool Layout -->
+<section class="crop-tool">
+    <div class="crop-grid">
+
+        <!-- Image Preview -->
+        <div class="crop-box">
+            <h3>Preview Image</h3>
+            <div class="image-container">
+                <img src="images/photo1-placeholder.jpg" alt="Photo for Cropping">
+                <div class="crop-overlay">
+                    <p>Drag to Crop</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crop Settings -->
+        <div class="crop-box">
+            <h3>Crop Settings</h3>
+            <form>
+                <label>Aspect Ratio</label>
+                <select>
+                    <option>Original</option>
+                    <option>Square (1:1)</option>
+                    <option>4:3</option>
+                    <option>16:9</option>
+                </select>
+
+                <label>Width (px)</label>
+                <input type="number" placeholder="Width in pixels">
+
+                <label>Height (px)</label>
+                <input type="number" placeholder="Height in pixels">
+
+                <label>
+                    <input type="checkbox">
+                    Maintain aspect ratio
+                </label>
+
+                <a href="touchup.html" class="btn-primary">Apply Crop</a>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Connor's Photography. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
